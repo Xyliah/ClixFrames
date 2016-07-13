@@ -1,0 +1,19 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+  <Button name="ClixFramesAuraTemplate" inherits="CompactAuraTemplate" virtual="true">
+    <Scripts>
+      <OnUpdate>
+        if ( GameTooltip:IsOwned(self) ) then
+          GameTooltip:SetUnitBuff(self:GetParent().displayedUnit, self:GetID());
+        end
+      </OnUpdate>
+      <OnEnter>
+        GameTooltip:SetOwner(self, "ANCHOR_RIGHT", 0, 0);
+        GameTooltip:SetUnitBuff(self:GetParent().displayedUnit, self:GetID());
+      </OnEnter>
+      <OnLeave>
+        GameTooltip:Hide();
+      </OnLeave>
+    </Scripts>
+  </Button>
+ </Ui>

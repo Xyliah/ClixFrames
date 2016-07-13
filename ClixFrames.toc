@@ -1,0 +1,25 @@
+## Interface: 60200
+## Version: 0.1a
+## Title: ClixFrames
+## Notes: Changes the appearance of StandardRaidFrames!
+## Author: Xylaa
+## DefaultState: enabled
+## SavedVariables: ClixFramesDB
+## OptionalDeps: LibSharedMedia-3.0
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+libs\AceAddon-3.0\AceAddon-3.0.xml
+libs\AceGUI-3.0\AceGUI-3.0.xml
+libs\AceConfig-3.0\AceConfig-3.0.xml
+libs\AceConsole-3.0\AceConsole-3.0.xml
+libs\AceDB-3.0\AceDB-3.0.xml
+libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+libs\AceTimer-3.0\AceTimer-3.0.xml
+libs\LibSharedMedia-3.0\lib.xml
+libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
+
+Core.lua
+Appearance.lua
+Auras.lua
+Options.lua
